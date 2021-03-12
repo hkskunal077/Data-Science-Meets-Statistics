@@ -1,6 +1,5 @@
 def birthdayparadox():
-    import random
-    import math
+    import random, math
 
     def sameDate(numPeople, numSame):
         possibleDates = range(366)
@@ -39,6 +38,9 @@ def birthdayparadox():
         
     #We cannot adjust the Mathematical formula, but simulation can be adjusted
     #So also we cannot create True Biasedness, so we add relative weights
+    
+    #Here the biasedness will be based upon the fact that Feb 29 is not to be included
+    #also some of the monthts like July-Aug are more favoured.
 
     def sameDate(numPeople, numSame):
         possibleDates = 4*list(range(0, 57)) + [58] + 4*list(range(59, 366))\
